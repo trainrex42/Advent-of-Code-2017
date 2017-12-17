@@ -7,7 +7,7 @@ pos = 0
 
 for i in range(1,2018):
     pos = ((puzzle + pos) % len(buf))+1
-    buf = buf[:pos] + [i] + buf[pos:]
+    buf.insert(pos,i)
 
 i = buf.index(2017) + 1
 
